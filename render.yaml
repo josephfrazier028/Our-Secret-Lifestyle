@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: our-secret-ls
+    runtime: static
+    buildCommand: echo "Static site — no build step required"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
